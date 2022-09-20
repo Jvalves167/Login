@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    android:rotationX="0">
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -14,7 +18,7 @@
         android:layout_marginLeft="55dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="55dp"
-        android:background="#2196F3"
+        android:background="#CAE3F8"
         android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -33,13 +37,16 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="38dp"
         android:layout_marginEnd="55dp"
-        android:background="#2196F3"
+        android:background="#CAE3F8"
         android:drawableLeft="@drawable/ic_baseline_account_box_24"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Usuário"
         android:inputType="textPersonName"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:shadowColor="#00000000"
+        android:singleLine="false"
+        android:soundEffectsEnabled="false" />
 
     <TextView
         android:id="@+id/textView2"
@@ -48,13 +55,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="120dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Login"
         android:textAlignment="center"
-        android:textColor="#4300BA"
-        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="36dp"
         android:textStyle="bold" />
 
     <Button
@@ -68,7 +76,8 @@
         android:layout_marginLeft="55dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="55dp"
-        android:text="ENTRAR" />
+        android:text="ENTRAR"
+        app:cornerRadius="26dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -77,12 +86,15 @@
         android:layout_below="@+id/button"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-thin"
         android:text="Esqueceu a senha?"
         android:textAlignment="center"
-        android:textColor="#3D6C91"
-        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
         android:textStyle="bold" />
+
 </RelativeLayout>
